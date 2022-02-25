@@ -8,10 +8,17 @@ function obtenerMayor(x, y) {
 }
 
 function mayoriaDeEdad(edad) {
+  if (edad>=18){
+    console.log("Allowed");
+  }
+  else{
+    console.log("Not allowed"); 
+  };
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
 }
+mayoriaDeEdad(20);
   
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
@@ -22,6 +29,20 @@ function conection(status) {
 }
 
 function saludo(idioma) {
+  switch(idioma){
+    case "aleman":
+      console.log("Guten Tag!");
+      break
+    case "mandarin":
+      console.log("Ni Hao!");
+      break
+    case "ingles":
+      console.log("Hello!");
+      break
+    case undefined:
+      console.log("Hola!");
+      break
+  }
   // Devuelve un saludo en tres diferentes lenguajes:
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
   // Si "idioma" es "mandarin", devuelve "Ni Hao!"
@@ -29,6 +50,7 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
 }
+saludo("idioma");
 
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
@@ -41,10 +63,16 @@ function colors(color) {
 }
 
 function esDiezOCinco(numero) {
+  if(numero===10 || numero===5){
   // Devuelve "true" si "numero" es 10 o 5
+    return("true");
+  }
+  return("false");
+  // Devuelve "true" si "numero" es 10 o 5mmmm
   // De lo contrario, devuelve "false"
   // Tu código:
 }
+esDiezOCinco(11);
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20

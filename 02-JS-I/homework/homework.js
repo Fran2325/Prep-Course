@@ -26,11 +26,10 @@ const nuevoModulo = 21 % 5 === 1; //true
 // No cambies los nombres de las funciones.
 
 function devolverString(str) {
-  var voyadevolverString= `Hola mi nombre es ${str}`;
-  return (voyadevolverString);
+  return ( str);
 }
 devolverString("Fran");
-//`Hola mi nombre es Fran`
+//Fran
 
 function suma(x, y) {
   var nuevaSuma= x+y;
@@ -106,8 +105,8 @@ function esPar(num) {
   }
   return false
 }
-esPar(2);
-//true
+esPar(-2);
+//false
 
 function esImpar(num) {
   if (num%2>=1){   
@@ -171,14 +170,17 @@ numeroRandom();
 // getRandomArbitrary(1, 10);
 
 function esPositivo(numero) {
-  if(numero<0){
-  return ("Es Negativo")
+  if(numero===0){
+    return (false);
+  }
+  else if(numero>0){
+  return ("Es positivo")
   };
-  return ("Es Positivo")
+  return ("Es negativo")
 
 }
-esPositivo(-1);
-//"Es Negativo"
+esPositivo(0);
+
 
 function agregarSimboloExclamacion(str) {
   var stringAgregarSimboloExclamacion= str+"!";
@@ -195,28 +197,28 @@ combinarNombres("Francis", "Martinez");
 //'Francis Martinez'
 
 function obtenerSaludo(nombre) {
-  var stringObtenerSaludo= `Hola soy ${nombre}`;
+  var stringObtenerSaludo= `Hola ` +nombre+ "!" ;
   return(stringObtenerSaludo);
 }
 obtenerSaludo("Fran");
-//`Hola soy Fran`
+//`Hola Fran`
 
 function obtenerAreaRectangulo(alto, ancho) {
-  var unidadesCuadradas = `${alto*ancho} Unidades Cuadradas`;
+  var unidadesCuadradas = alto*ancho;
   return(unidadesCuadradas);
 }
 obtenerAreaRectangulo(2, 4);
-//' 8 Unidades Cuadradas'
+//8
 
 function retornarPerimetro(lado){
-  var perimetro = `${lado+lado+lado+lado} cm de Perimetro`;
+  var perimetro = lado+lado+lado+lado;
   return(perimetro); 
 }
 retornarPerimetro(2);
-//'8 cm de Perimetro'
+//8
 
 function areaDelTriangulo(base, altura){
-  var formulaTriangulo= `El area de un Triangulo: ${(base*altura)/2} M2`;
+  var formulaTriangulo= (base*altura)/2;
   return (formulaTriangulo);
 }
 areaDelTriangulo(3,4);
@@ -230,14 +232,25 @@ deEuroAdolar(1);
 //1.2
 
 function esVocal(letra){
- var vocales= a="a",e="e", i="i",o="o",u="u";
- if (letra==vocales){
-   return("Es Vocal")
+ if (letra=="a"){
+   return("Es vocal")
  }
+ if (letra=="e"){
+  return("Es vocal")
+}
+if (letra=="i"){
+  return("Es vocal")
+}
+if (letra=="o"){
+  return("Es vocal")
+}
+if (letra=="u"){
+  return("Es vocal")
+}
  return("Dato incorrecto");
 }
 esVocal("Solo coloqué las Vocales");
-// "Dato incorrecto"
+// "Dato incorrecto" 
 
 // No modificar nada debajo de esta línea
 // --------------------------------
