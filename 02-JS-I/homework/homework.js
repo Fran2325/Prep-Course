@@ -232,19 +232,19 @@ deEuroAdolar(1);
 //1.2
 
 function esVocal(letra){
- if (letra=="a"){
+ if (letra==="a"){
    return("Es vocal")
  }
- if (letra=="e"){
+ if (letra==="e"){
   return("Es vocal")
 }
-if (letra=="i"){
+if (letra==="i"){
   return("Es vocal")
 }
-if (letra=="o"){
+if (letra==="o"){
   return("Es vocal")
 }
-if (letra=="u"){
+if (letra==="u"){
   return("Es vocal")
 }
  return("Dato incorrecto");
